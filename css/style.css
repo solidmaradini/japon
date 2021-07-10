@@ -1,0 +1,237 @@
+
+*{
+    margin:0;
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+    font-family:'Bebas Neue';
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px  rgba(209, 192, 192, 0.884);
+    box-sizing: border-box;
+}
+body{
+     min-height: 100vh; 
+     min-width: 100vh;
+     overflow-x: hidden;
+}
+
+/*/////////////////////////// HEADER ///////////////////////////*/
+
+header{
+    background-color: #FFFAFA;
+    height: 15%;
+    padding: 5px;
+    display: flex;
+      align-items: center;
+    justify-content: space-around; 
+    box-sizing: border-box;
+   
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+header nav{
+     font-size: 1.25em;
+    display: flex;
+    align-items: center;   
+    justify-content: space-around; 
+        
+}
+
+ .link{
+    display: flex;
+    align-items: center; 
+    font-size: 1.25em;
+    margin-left: 30px;
+    padding: 20px 10px;  
+    width: 162px;
+    height: 30px;
+    border-radius: 11px;
+    text-align: center;
+    box-shadow: -5px -5px 10px 0px #FFFDFD,
+    5px 5px 10px 0px rgba(185, 174, 174, 0.25),    
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+ .link-logo{
+    display: flex;
+    align-items: center; 
+    font-size: 1.25em;    
+    padding: 20px 5px;  
+    width: 80px;
+    height: 80px;
+    border-radius: 70px;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ #logo-inicio{
+    width: 56px;
+    height: 56px;
+    left: 9px;
+
+ }
+
+/*/////////////////SECTION/MAIN/////////////////////// */
+
+
+section{
+    box-sizing: border-box;
+    background-color:#FFFAFA ;
+    height: 70%;
+    
+}
+
+       /*//////////////////GRID//////////////////////*/
+
+
+.grilla{
+    justify-content: center;
+    align-items: center;
+     width: 100vw;
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns:repeat(4, 1fr);
+    row-gap: 5px;
+    justify-items: center;
+
+}
+
+.img-vrtl{
+    width: 205px;
+    height: 265px;
+    object-fit: cover;
+    object-position: center;
+}
+.img-hzt{
+    width: 313px;
+    height: 238px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#img-txt-hzt{
+    width: 293px;
+    height: 218px;
+    position: center;
+    text-align: center;
+ }
+    
+
+ #img-txt-vrtl{
+    width: 215px;
+    height: 275px;
+    text-align: center;
+ }
+
+ p{position: center;
+    
+ }
+
+.cntd-img-vrtl{
+    padding: 20px 5px;  
+    width: 222px;
+    height: 313px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: initial;
+}
+
+.cntd-img-hzt{
+    padding: 20px 5px;  
+    width:333px;
+    height: 258px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/*////////////// FOOTER/////////////// */
+
+
+footer{
+    height: 15%;
+    width: 100%;
+    background-color: #FFF9D9;
+    padding-right:1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    color: black;
+}
+
+
+
+/*////////////// TABLA PAGINA PRODUCTOS.HTML////////////// */
+
+
+
+.miTabla {
+    margin:20px;
+    position: absolute;
+    justify-content: center;
+    border-collapse:separate;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+/*////////////// FORMULARIO PAGINA:QUIENESSOMOS.HTML////////////// */
+
+ .formu {
+    display: flex;
+    flex-direction: row;
+   
+} 
+
+.formu li input{
+    width: 150px;
+    height: 16px;
+}
+
+.lario{
+    display: flex;
+    align-self: center;    
+}  
+
+ .lario li input{
+    width: 150px;
+    height: 16px;
+ } 
+
+
+/*---------------- //////////////IN PROGRESS////////////// ---------------------------------*/
+
+
+
+
+ /* .btns{
+    display: flex;
+    align-items: center;
+    color:black;   
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 2px 10px;
+    box-shadow: -5 -5 10 0 rgb(17, 17, 17, 0.25);
+    background-color: lawngreen;
+}
+  */
