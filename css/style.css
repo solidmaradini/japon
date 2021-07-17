@@ -1,3 +1,28 @@
+@media only screen and (max-width: 600px) {
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    header nav{
+        font-size: 1.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .grilla{
+
+        font-size: 1.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
 
 *{
     margin:0;
@@ -16,7 +41,10 @@ body{
      min-height: 100vh; 
      min-width: 100vh;
      overflow-x: hidden;
-}
+    box-sizing: content-box;
+    
+    }
+  
 
 /*/////////////////////////// HEADER ///////////////////////////*/
 
@@ -25,9 +53,9 @@ header{
     height: 15%;
     padding: 5px;
     display: flex;
-      align-items: center;
+     align-items: center;
     justify-content: space-around; 
-    box-sizing: border-box;
+    
    
 }
 
@@ -42,23 +70,59 @@ header nav{
     display: flex;
     align-items: center;   
     justify-content: space-around; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
         
 }
 
  .link{
     display: flex;
     align-items: center; 
-    font-size: 1.25em;
+    font-size: 1em;
     margin-left: 30px;
-    padding: 20px 10px;  
+    padding: 20px;  
     width: 162px;
-    height: 30px;
+    height: 50px;
     border-radius: 11px;
     text-align: center;
+    color: black;
     box-shadow: -5px -5px 10px 0px #FFFDFD,
     5px 5px 10px 0px rgba(185, 174, 174, 0.25),    
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    display: block;
+    text-decoration: none;  
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s ease-in-out;
  }
+.link::before{
+    
+    background: #FAE192;
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+.link::before{
+    width: 0%;
+    height: 100%;
+    
+  }
+  
+.link:hover::before{
+    width: 100%;
+   
+  }
+  
+
+
  .link-logo{
     display: flex;
     align-items: center; 
@@ -78,6 +142,65 @@ header nav{
     left: 9px;
 
  }
+ .jApon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+ }
+
+ .jApon h3{
+    font-size: 20px;
+    width: 280px;
+    height: 280px;
+    border-radius: 200px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ .jApon p{
+    font-size: 20px;
+    width: 380px;
+    height: 380px;
+    border-radius: 200px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+ .img-logo {
+    width: 280px;
+    height: 280px;
+    border-radius: 200px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    mix-blend-mode: multiply;
+    padding: 40px;
+    box-shadow: inset -5px -5px 10px 0px rgba(185, 174, 174, 0.25),
+    inset 5px 5px 10px 0px rgba(255, 253, 253, 0.75), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+
+}
+
+
+
 
 /*/////////////////SECTION/MAIN/////////////////////// */
 
@@ -89,7 +212,11 @@ section{
     
 }
 
-       /*//////////////////GRID//////////////////////*/git init
+/*//////////////////GRID//////////////////////*/
+
+
+
+
 .grilla{
     justify-content: center;
     align-items: center;
